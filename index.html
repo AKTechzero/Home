@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="X-Frame-Options" content="DENY">
-    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
-    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+
     <title>AKT - Homepage</title>
 
-  
     <style>
         /* Reset CSS */
         * {
@@ -48,6 +47,18 @@
             transform: translate(-50%, -50%);
             text-align: center;
             color: white;
+
+            /* blinking animation */
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50%, 100% {
+                opacity: 1;
+            }
+            25%, 75% {
+                opacity: 0;
+            }
         }
 
         .hero h1 {
@@ -62,54 +73,45 @@
             font-weight: 300;
         }
 
-      
+        /* Navbar container */
+        .navbar {
+            background-color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
-      
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
 
-         /* Navbar container */
-    .navbar {
-      background-color: #fff;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+        /* Navigation links container */
+        .nav-links {
+            display: flex;
+            list-style-type: none;
+        }
 
-    .navbar .logo {
-      font-size: 24px;
-      font-weight: bold;
-      color: #333;
-      text-decoration: none;
-    }
+        .nav-links li {
+            margin-left: 30px;
+        }
 
-    /* Navigation links container */
-    .nav-links {
-      display: flex;
-      list-style-type: none;
-    }
+        .nav-links li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            padding: 10px;
+            transition: color 0.3s, border-bottom 0.3s;
+        }
 
-    .nav-links li {
-      margin-left: 30px;
-    }
-
-    .nav-links li a {
-      text-decoration: none;
-      color: #333;
-      font-size: 16px;
-      padding: 10px;
-      transition: color 0.3s, border-bottom 0.3s;
-    }
-
-    .nav-links li a:hover {
-      color: #007BFF;
-      border-bottom: 2px solid #007BFF;
-    }
-
-    
-
- 
-
+        .nav-links li a:hover {
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+        }
 
         /* Footer */
         footer {
@@ -132,33 +134,28 @@
             .hero p {
                 font-size: 16px;
             }
-
-            
         }
     </style>
 </head>
 <body>
 
     <!-- Navigation Section -->
-     <nav class="navbar">
-    <a href="index.html" class="logo" >AKTechzero///</a>
-    
-    <!-- Navigation Links -->
-    <ul class="nav-links">
-      <li><a href="sev.html">Services</a></li>
-      <li><a href="ado.html">About</a></li>
-      <li><a href="con.html">Contact</a></li>
-    </ul>
+    <nav class="navbar">
+        <a href="index.html" class="logo">AKTechzero///</a>
 
-   
-  </nav>
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="sev.html">Services</a></li>
+            <li><a href="ado.html">About</a></li>
+            <li><a href="con.html">Contact</a></li>
+        </ul>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h1>We Build Smarter Digital Solutions</h1>
             <p>Transforming businesses with innovative technology and design</p>
-          
         </div>
     </section>
 
