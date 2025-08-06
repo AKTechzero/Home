@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <title>Services - AKT</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+                   /* Navbar container */
+    .navbar {
+      background-color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      text-decoration: none;
+    }
+
+    /* Navigation links container */
+    .nav-links {
+      display: flex;
+      list-style-type: none;
+    }
+
+    .nav-links li {
+      margin-left: 30px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      padding: 10px;
+      transition: color 0.3s, border-bottom 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: #007BFF;
+      border-bottom: 2px solid #007BFF;
+    }
+
+        /* Hero Section */
+        .hero {
+            background: url('n.png') center center/cover no-repeat;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            z-index: 1;
+        }
+
+        /* Introduction Section */
+        .intro-section {
+            padding: 60px 10%;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .intro-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .intro-section p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        /* Services Section */
+        .services-section {
+            padding: 60px 10%;
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .service-card {
+            background-color: #fff;
+            padding: 30px;
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .service-card a {
+            text-decoration: none;
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .service-card a:hover {
+            background-color: #005bb5;
+        }
+
+       
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .services-section {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .service-card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+    <a href="index.html" class="logo" >AKTechzero///</a>
+    
+    <!-- Navigation Links -->
+    <ul class="nav-links">
+      <li><a href="sev.html">Services</a></li>
+      <li><a href="ado.html">About</a></li>
+      <li><a href="con.html">Contact</a></li>
+    </ul>
+
+   
+  </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Our Services</h1>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="intro-section">
+        <h2>What We Do</h2>
+        <p>At AKT, we specialize in providing innovative digital solutions that empower businesses to achieve greater success. Our team works closely with you to develop custom strategies tailored to your goals.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <!-- Service 1 -->
+        <div class="service-card">
+            <h3>Web Development Services</h3>
+            <p>We create responsive and high-performance websites tailored to your business needs, ensuring a seamless user experience across all devices.</p>
+            <a href="web.html">Learn More</a>
+        </div>
+        <!-- Service 2 -->
+        <div class="service-card">
+            <h3>Cybersecurity Services</h3>
+            <p>In today's digital world, cybersecurity is more crucial than ever. At AKT, we provide comprehensive cybersecurity services designed to protect your business from ever-evolving threats. Our expert team uses the latest technology and industry best practices to ensure your data, networks, and systems remain safe, secure, and resilient.</p>
+            <a href="cbyer.html">Learn More</a>
+        </div>
+        <!-- Service 3 -->
+        <div class="service-card">
+            <h3>Personal Information Finder Services</h3>
+            <p>
+In today's digital age, managing and protecting your personal information is crucial. At AKT, we offer expert Personal Information Finder Services to help you securely locate, verify, and manage your data, ensuring it’s accurate, up-to-date, and compliant with privacy laws.
+
+We utilize advanced tools and techniques to help individuals and businesses ensure that their personal information is accurate, up-to-date, and secure across various platforms.</p>
+            <a href="pa.html">Learn More</a>
+        </div>
+    </section>
+
+   
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 AKTechzore. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+

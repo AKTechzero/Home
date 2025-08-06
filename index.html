@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    
+    <title>AKT - Homepage</title>
+
+  
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Fullscreen Background */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url('n.png') center center/cover no-repeat;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+      
+
+      
+
+         /* Navbar container */
+    .navbar {
+      background-color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      text-decoration: none;
+    }
+
+    /* Navigation links container */
+    .nav-links {
+      display: flex;
+      list-style-type: none;
+    }
+
+    .nav-links li {
+      margin-left: 30px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      padding: 10px;
+      transition: color 0.3s, border-bottom 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: #007BFF;
+      border-bottom: 2px solid #007BFF;
+    }
+
+    
+
+ 
+
+
+        /* Footer */
+        footer {
+            background-color: #2a2a2a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Section -->
+     <nav class="navbar">
+    <a href="index.html" class="logo" >AKTechzero///</a>
+    
+    <!-- Navigation Links -->
+    <ul class="nav-links">
+      <li><a href="sev.html">Services</a></li>
+      <li><a href="ado.html">About</a></li>
+      <li><a href="con.html">Contact</a></li>
+    </ul>
+
+   
+  </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>We Build Smarter Digital Solutions</h1>
+            <p>Transforming businesses with innovative technology and design</p>
+          
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 AKTechzero. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
